@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Mi Blog Refactorizado</title>
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -12,16 +12,15 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">Grid&Flex Blog</a>
+      <a class="navbar-brand fw-bold text-uppercase fs-4 " href="#">Grid&Flex Blog</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuBlog">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menuBlog">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">Quiénes Somos</a></li>
-          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-        </ul>
+        <ul class="navbar-nav ms-auto fw-bold gap-5 fs-5">
+          <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-house"></i> Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"> <i class="bi bi-people"></i> Quiénes Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html"> <i class="bi bi-telephone"></i> Contacto</a></li>
       </div>
     </div>
   </nav>
@@ -30,36 +29,36 @@
     <div class="row">
       
       <aside class="col-md-2 d-none d-md-block border-end">
-        <p class="text-muted text-center mt-5"><small>Espacio para Publicidad</small></p>
+        <p class="text-muted text-center mt-5 fs-4"><small>Espacio para Publicidad</small></p>
       </aside>
 
       <section class="col-md-8 px-4">
         
         <article class="card mb-5 shadow-sm border-0">
           <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800" class="card-img-top rounded-top" alt="Moda urbana" style="height: 350px; object-fit: cover;">
-          <div class="card-body pt-4">
-            <span class="badge bg-dark mb-2 px-3 py-2">Tendencias</span>
-            <h2 class="card-title h3 fw-bold">Streetwear: La colección urbana de la temporada</h2>
-            <p class="text-muted small mb-3">Publicado el 24 de Octubre por Equipo Grid & Flex</p>
-            <p class="card-text text-secondary">Descubre las nuevas prendas oversize y diseños exclusivos que acaban de llegar a nuestro catálogo. Aprende a combinar comodidad con el mejor estilo urbano para tu día a día sin sacrificar movilidad...</p>
-            <a href="#" class="btn btn-outline-dark rounded-pill px-4 mt-2">Leer artículo &rarr;</a>
+          <div class="card-body pt-4 text-center">
+            <span class="badge bg-dark mb-2 px-3 py-2 fs-5 text-uppercase">Tendencias</span>
+            <h2 class="card-title h3 fw-bold fs-3 mb-3">Streetwear: La colección urbana de la temporada</h2>
+            <p class="text-muted small mb-3 ">Publicado el 24 de Octubre por Equipo Grid & Flex</p>
+            <p class="card-text text-secondary fs-6 mb-4 ">Descubre las nuevas prendas oversize y diseños exclusivos que acaban de llegar a nuestro catálogo. Aprende a combinar comodidad con el mejor estilo urbano para tu día a día sin sacrificar movilidad...</p>
+            <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2 mt-2">Leer artículo &rarr;</a>
           </div>
         </article>
 
         <article class="card mb-5 shadow-sm border-0">
           <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800" class="card-img-top rounded-top" alt="Ropa en percheros" style="height: 350px; object-fit: cover;">
-          <div class="card-body pt-4">
-            <span class="badge bg-dark mb-2 px-3 py-2">Guías de Compra</span>
-            <h2 class="card-title h3 fw-bold">Cómo armar tu clóset cápsula con básicos</h2>
+          <div class="card-body pt-4 text-center">
+            <span class="badge bg-dark mb-2 px-3 py-2 fs-5 text-uppercase">Guías de Compra</span>
+            <h2 class="card-title h3 fw-bold fs-3 mb-3">Cómo armar tu clóset cápsula con básicos</h2>
             <p class="text-muted small mb-3">Publicado el 20 de Octubre por Equipo Grid & Flex</p>
-            <p class="card-text text-secondary">No necesitas tener tu carrito de compras desbordado para vestir increíble todos los días. Te enseñamos el secreto de seleccionar prendas esenciales que combinan perfectamente entre sí para cualquier ocasión...</p>
-            <a href="#" class="btn btn-outline-dark rounded-pill px-4 mt-2">Leer artículo &rarr;</a>
+            <p class="card-text text-secondary fs-6 mb-4">No necesitas tener tu carrito de compras desbordado para vestir increíble todos los días. Te enseñamos el secreto de seleccionar prendas esenciales que combinan perfectamente entre sí para cualquier ocasión...</p>
+            <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2 mt-2">Leer artículo &rarr;</a>
           </div>
         </article>
 
       </section>
       <aside class="col-md-2 d-none d-md-block border-start">
-        <p class="text-muted text-center mt-5"><small>Espacio para Noticias</small></p>
+        <p class="text-muted text-center mt-5 fs-4"><small>Espacio para Noticias</small></p>
       </aside>
 
     </div>
